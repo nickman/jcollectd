@@ -40,10 +40,12 @@
 				    <archive>
 				        <manifest>
 				            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-				            <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+				            <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>				            
 				            <addClasspath>true</addClasspath>
+				            <mainClass>org.collectd.mx.MBeanReceiver</mainClass>
 				        </manifest>
 				        <manifestEntries>
+					        <Premain-Class>org.collectd.mx.RemoteMBeanSender</Premain-Class>
 				        </manifestEntries>
 				    </archive>
 				</configuration>
